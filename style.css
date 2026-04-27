@@ -50,6 +50,7 @@ nav a {
 .gallery img {
   width: 250px;
   height: auto;
+  display: block;
 }
 
 /* Optional: hover effect (makes it feel more professional) */
