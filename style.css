@@ -48,9 +48,8 @@ nav a {
 }
 
 .gallery img {
-  width: 250px;
-  height: auto;
-  display: block;
+  width: 250px !important;
+  height: auto !important;
 }
 
 /* Optional: hover effect (makes it feel more professional) */
