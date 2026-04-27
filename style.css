@@ -42,14 +42,21 @@ nav a {
 }
 
 .gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
   gap: 15px;
 }
 
 .gallery img {
-  width: 100%;
-  border-radius: 12px;
+  width: 250px;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Optional: hover effect (makes it feel more professional) */
+.gallery img:hover {
+  transform: scale(1.03);
+  transition: 0.2s;
 }
 
 footer {
