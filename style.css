@@ -49,8 +49,7 @@ nav a {
 
 .gallery img {
   width: 250px;
-  height: 250px;
-  object-fit: cover;
+  height: auto;
 }
 
 /* Optional: hover effect (makes it feel more professional) */
