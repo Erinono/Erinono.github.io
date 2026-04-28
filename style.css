@@ -31,10 +31,12 @@ nav a:hover {
   color: #a94c6d;
 }
 
-/* 🌷 Section */
-.section {
-  max-width: 1000px;
-  margin: auto;
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: flex-start;
   padding: 40px 20px;
 }
 
