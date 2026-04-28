@@ -1,10 +1,17 @@
-/* 🌸 Extra Soft Pastel Pink Theme 🌸 */
+/* 🌸 FORCE PASTEL + LEFT ALIGN 🌸 */
 
-body {
+/* Reset (prevents weird browser defaults) */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 🎀 Body */
+body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #fff5f8, #fffafa);
-  color: #6b5b5b;
+  background: #fff7fa !important;
+  color: #6b5b5b !important;
 }
 
 /* 🎀 Navigation */
@@ -13,135 +20,84 @@ nav {
   justify-content: center;
   gap: 25px;
   padding: 20px;
-  background: #ffeaf1;
-  border-bottom: 1px solid #f9dbe6;
+  background: #ffeaf1 !important;
 }
 
 nav a {
   text-decoration: none;
-  color: #c06c84;
+  color: #c06c84 !important;
   font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 20px;
-  transition: 0.2s;
 }
 
-nav a:hover {
-  background: #ffd6e5;
-  color: #a94c6d;
-}
-
-.gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
-  align-items: flex-start;
+/* 🌷 Section (slightly left shifted) */
+.section {
+  max-width: 1000px;
+  margin-left: 40px !important;   /* 👈 FORCE LEFT SHIFT */
   padding: 40px 20px;
 }
 
 /* 🧁 Cards */
 .card {
-  background: #fff7fa;
+  background: #fff0f5 !important;
   padding: 20px;
-  border-radius: 22px;
+  border-radius: 20px;
   margin: 15px 0;
-  box-shadow: 0 8px 18px rgba(255, 182, 193, 0.15);
 }
 
 /* 💖 Buttons */
 .button, .btn {
   display: inline-block;
   padding: 10px 20px;
-  background: #ffc1d6;
-  color: #7a4f5f;
+  background: #ffc1d6 !important;
+  color: #7a4f5f !important;
   border-radius: 25px;
   text-decoration: none;
-  transition: 0.2s;
 }
 
-.button:hover, .btn:hover {
-  background: #ffadc9;
-  transform: scale(1.04);
-}
-
-/* 💌 Gallery */
+/* 💌 GALLERY — HARD FIX */
 .gallery {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: flex-start;
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 20px !important;
+  justify-content: flex-start !important;  /* 👈 FORCE LEFT */
+  align-items: flex-start !important;
 }
 
+/* 💌 Images — HARD FIX */
 .gallery img {
-  width: 250px;
-  height: auto;
+  width: 250px !important;
+  height: auto !important;
   border-radius: 18px;
-  box-shadow: 0 5px 12px rgba(255, 182, 193, 0.2);
-  transition: 0.2s;
+  display: block !important;
 }
 
-.gallery img:hover {
-  transform: scale(1.04);
-}
-
-/* 🛍 Service Cards */
+/* 🛍 Services */
 .services {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
 }
 
+/* 🛍 Service cards */
 .service-card {
   display: block;
   width: 250px;
   padding: 20px;
-  background: #fff7fa;
-  border-radius: 22px;
+  background: #fff0f5 !important;
+  border-radius: 20px;
   text-decoration: none;
-  color: #6b5b5b;
-  transition: 0.2s;
-  box-shadow: 0 6px 15px rgba(255, 182, 193, 0.15);
-}
-
-.service-card:hover {
-  transform: translateY(-4px) scale(1.01);
-  background: #fff0f5;
+  color: #6b5b5b !important;
 }
 
 /* 🌸 Headings */
 h1, h2, h3 {
-  color: #c06c84;
+  color: #c06c84 !important;
+  margin-bottom: 10px;
 }
 
-/* 🎀 Custom order box */
-.custom-order {
-  margin-top: 40px;
-  padding: 20px;
-  background: #fff7fa;
-  border-radius: 22px;
-  text-align: center;
-  box-shadow: 0 6px 15px rgba(255, 182, 193, 0.15);
-}
-
-.custom-order a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #ffc1d6;
-  color: #7a4f5f;
-  text-decoration: none;
-  border-radius: 25px;
-}
-
-.custom-order a:hover {
-  background: #ffadc9;
-}
-
-/* 🌷 Footer */
+/* 🎀 Footer */
 footer {
   text-align: center;
   padding: 20px;
-  color: #c06c84;
+  color: #c06c84 !important;
 }
