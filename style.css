@@ -68,7 +68,7 @@ nav a:hover {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .gallery img {
