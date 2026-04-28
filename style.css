@@ -58,6 +58,29 @@ nav a {
   transition: 0.2s;
 }
 
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.service-card {
+  display: block;
+  width: 250px;
+  padding: 20px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  transition: 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  background: #eaeaea;
+}
+
 footer {
   text-align: center;
   padding: 20px;
