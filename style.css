@@ -27,10 +27,10 @@ nav a {
   font-weight: 600;
 }
 
-/* 🌸 SECTION (CENTERED AGAIN) */
+/* 🌸 SECTION (CENTERED TEXT) */
 .section {
   max-width: 1000px;
-  margin: 0 auto;              /* 👈 keeps text centered */
+  margin: 0 auto;
   padding: 40px 20px;
 }
 
@@ -58,30 +58,31 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
-/* 🌸 GALLERY (ONLY IMAGES LEFT) */
+/* 🌸 GALLERY (IMAGES LEFT ONLY) */
 .gallery {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content: flex-start;   /* 👈 images left only */
+  justify-content: flex-start;
 }
 
-/* 🌸 ALL IMAGES (NO SQUASHING) */
+/* 🌸 ALL IMAGES — SAME HEIGHT, NO CROPPING */
 .gallery img {
-  height: 260px;        /* same height */
-  width: auto;          /* keep proportions */
-  object-fit: contain;  /* no distortion */
+  height: 260px;         /* equal height */
+  width: auto;           /* keeps proportions */
+  object-fit: contain;   /* 👈 NO cropping, NO squishing */
   border-radius: 18px;
   display: block;
   background: #fff;
   padding: 6px;
+  background: #fff0f5; /* soft pastel frame instead of white */
 }
 
-/* 🌸 BODY HORROR (2nd gallery) */
+/* 🌸 BODY HORROR (still same height, but no cropping now) */
 .gallery:nth-of-type(2) img {
-  width: 260px;         /* uniform size */
   height: 260px;
-  object-fit: cover;    /* crop instead of squish */
+  width: auto;           /* 👈 changed from fixed width */
+  object-fit: contain;   /* 👈 ensures full image visible */
 }
 
 /* 🌸 SERVICES */
